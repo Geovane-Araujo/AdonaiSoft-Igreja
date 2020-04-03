@@ -372,16 +372,16 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
     }//GEN-LAST:event_Salvar1MouseExited
 
     private void Salvar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salvar1ActionPerformed
-        ClasseCadIgrejas.NomeIgreja = CamoNomeIgreja.getText();
-        ClasseCadIgrejas.Telefone = CampoTelefone.getText();
-        ClasseCadIgrejas.Endereco = CampoEndereco.getText();
-        ClasseCadIgrejas.Bairro = CampoBairro.getText();
-        ClasseCadIgrejas.Estado = CampoEstado.getSelectedItem().toString();
-        ClasseCadIgrejas.Cidade = CampoCidade.getText();
-        ClasseCadIgrejas.PastorResponsavel = CampopastorResponsavel.getText();
-        ClasseCadIgrejas.Email = CampoEmail.getText();
-        ClasseCadIgrejas.Cep = CampoCep.getText();
-        ClasseCadIgrejas.Numero = Integer.parseInt(CampoNumero.getText());
+        ClasseCadIgrejas.nomeIgreja = CamoNomeIgreja.getText();
+        ClasseCadIgrejas.telefone = CampoTelefone.getText();
+        ClasseCadIgrejas.endereco = CampoEndereco.getText();
+        ClasseCadIgrejas.bairro = CampoBairro.getText();
+        ClasseCadIgrejas.estado = CampoEstado.getSelectedItem().toString();
+        ClasseCadIgrejas.cidade = CampoCidade.getText();
+        ClasseCadIgrejas.pastorResponsavel = CampopastorResponsavel.getText();
+        ClasseCadIgrejas.email = CampoEmail.getText();
+        ClasseCadIgrejas.cep = CampoCep.getText();
+        ClasseCadIgrejas.numero = Integer.parseInt(CampoNumero.getText());
 
         verificar();
             
@@ -437,10 +437,10 @@ public class CadastroContatoIgrejas extends javax.swing.JDialog {
     }
     public void verificar(){
         if(CampoNumero.getText().equals("")){
-            ClasseCadIgrejas.Numero = 0;
+            ClasseCadIgrejas.numero = 0;
         }
         else{
-            ClasseCadIgrejas.Numero = Integer.parseInt(CampoNumero.getText());
+            ClasseCadIgrejas.numero = Integer.parseInt(CampoNumero.getText());
         }
     }
     
