@@ -13,25 +13,25 @@ public class ClasseCadIgrejas {
 
     public static int ID_Igreja;  //ok
     
-    public static String NomeIgreja; // ok
+    public static String nomeIgreja; // ok
     
-    public static String Endereco; //ok
+    public static String endereco; //ok
     
-    public static String Bairro;  // ok
+    public static String bairro;  // ok
     
-    public static String Cidade; // ok
+    public static String cidade; // ok
     
-    public static int Numero;
+    public static int numero;
     
-    public static String Estado;  //ok
+    public static String estado;  //ok
     
-    public static String Telefone; // ok
+    public static String telefone; // ok
     
-    public static String PastorResponsavel;
+    public static String pastorResponsavel;
     
-    public static String Email;
+    public static String email;
     
-    public static String Cep;
+    public static String cep;
 
 
     ConexaoBanco conectar = new ConexaoBanco();
@@ -48,16 +48,16 @@ public class ClasseCadIgrejas {
             PreparedStatement stmt = con.prepareStatement(sql);
             
             
-            stmt.setString(1, NomeIgreja);
-            stmt.setString(2, Telefone);
-            stmt.setString(3, Email);
-            stmt.setString(4, PastorResponsavel);
-            stmt.setString(5, Endereco);
-            stmt.setInt(6, Numero);
-            stmt.setString(7, Bairro);
-            stmt.setString(8, Cidade);
-            stmt.setString(9, Estado);
-            stmt.setString(10, Cep);
+            stmt.setString(1, nomeIgreja);
+            stmt.setString(2, telefone);
+            stmt.setString(3, email);
+            stmt.setString(4, pastorResponsavel);
+            stmt.setString(5, endereco);
+            stmt.setInt(6, numero);
+            stmt.setString(7, bairro);
+            stmt.setString(8, cidade);
+            stmt.setString(9, estado);
+            stmt.setString(10, cep);
             
    
             stmt.execute();
@@ -82,16 +82,16 @@ public class ClasseCadIgrejas {
             
             
             
-            stmt.setString(1, NomeIgreja);
-            stmt.setString(2, Telefone);
-            stmt.setString(3, Email);
-            stmt.setString(4, PastorResponsavel);
-            stmt.setString(5, Endereco);
-            stmt.setInt(6, Numero);
-            stmt.setString(7, Bairro);
-            stmt.setString(8, Cidade);
-            stmt.setString(9, Estado);
-            stmt.setString(10, Cep);
+            stmt.setString(1, nomeIgreja);
+            stmt.setString(2, telefone);
+            stmt.setString(3, email);
+            stmt.setString(4, pastorResponsavel);
+            stmt.setString(5, endereco);
+            stmt.setInt(6, numero);
+            stmt.setString(7, bairro);
+            stmt.setString(8, cidade);
+            stmt.setString(9, estado);
+            stmt.setString(10, cep);
             stmt.setInt(11, ID_Igreja);
             
             stmt.executeUpdate();
